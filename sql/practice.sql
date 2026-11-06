@@ -131,3 +131,12 @@ ROLLBACK;
 
 -- INSERT INTO projects (title, stars, user_id)
 -- VALUES ('Invalid Owner Project', 10, 99999);
+
+-- Require every project to have an owner
+ALTER TABLE projects
+ALTER COLUMN user_id SET NOT NULL;
+
+-- Prevent negative stars
+ALTER TABLE projects
+ADD CONSTRAINT chk_projects_stars_nonnegative
+CHECK (stars >= 0);
