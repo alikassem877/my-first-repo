@@ -21,11 +21,14 @@ console.log(filteredProjects); // [ 'Project 3', 'Project 4' ]
 // 3. Fixed word counter function with correct scoping
 const countWords = (text) => {
   const trimmedText = text?.trim() ?? "";
+
   if (trimmedText === "") return 0;
+
   return trimmedText.split(/\s+/).length;
 };
 
-console.log(countWords("Hello modern JavaScript world!")); // 5
+console.log(countWords("  hello   world  "));
+console.log(countWords(""));
 
 // 4. Clean FizzBuzz loop (1 to 30)
 for (let i = 1; i <= 30; i++) {

@@ -1,3 +1,4 @@
+
 <!doctype html>
 <html lang="en">
   <head>
@@ -9,7 +10,7 @@
     />
     <title>Ali Kassem | Software Engineer</title>
 
-    <!-- Font Preloading -->
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -17,16 +18,18 @@
       href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
     />
 
-    <!-- Stylesheets & Scripts -->
+    <!-- Stylesheet and JavaScript -->
     <link rel="stylesheet" href="style.css" />
     <script src="js/script.js" defer></script>
   </head>
-  
-  <body>
-    <!-- Skip to Content Link for Accessibility -->
-    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <!-- Header & Navigation -->
+  <body>
+    <!-- Skip Link -->
+    <a href="#main-content" class="skip-link">
+      Skip to main content
+    </a>
+
+    <!-- Header -->
     <header class="header">
       <nav class="nav container" aria-label="Main Navigation">
         <a href="#" class="logo" aria-label="Ali Kassem Home">
@@ -39,61 +42,74 @@
           <li><a href="#github">GitHub</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
-        <button id="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
+
+        <button
+          id="theme-toggle"
+          type="button"
+          aria-label="Toggle dark mode"
+          aria-pressed="false"
+        >
+          🌙
+        </button>
       </nav>
     </header>
 
+    <!-- Main Content -->
     <main id="main-content" class="container">
-      <!-- Hero Section -->
+
+      <!-- Hero -->
       <section class="hero" aria-labelledby="hero-title">
         <h1 id="hero-title">Software Engineer</h1>
         <p class="subtitle">
-          Building robust backend systems, multi-tenant architectures, and cloud
-          solutions.
+          Building robust backend systems, multi-tenant architectures,
+          and scalable web applications.
         </p>
       </section>
 
-      <!-- About Section -->
+      <!-- About -->
       <section id="about" class="section">
         <h2>About Me</h2>
         <p>
-          I am a software engineer focused on building performant backend
-          services, relational database design, and scalable web platforms.
+          I am a software engineer focused on building backend services,
+          relational database solutions, and scalable web platforms.
         </p>
       </section>
 
-      <!-- Projects Section -->
+      <!-- Featured Projects -->
       <section id="projects" class="section">
         <h2>Featured Projects</h2>
         <p class="section-intro">
-          Here are a few highlights of my recent work:
+          A selection of my software development work.
         </p>
 
-        <div class="projects-grid">
-          <!-- Dynamically populated via JS -->
-        </div>
+        <div id="featured-projects" class="projects-grid"></div>
       </section>
 
-      <!-- GitHub Repositories Section -->
+      <!-- GitHub Repositories -->
       <section id="github" class="section">
         <h2>GitHub Repositories</h2>
+
         <p class="section-intro">
-          Live public repositories fetched directly from GitHub:
+          Public repositories fetched directly from GitHub.
         </p>
+
         <div id="github-repos" class="projects-grid">
           <p class="loading-text">Loading repositories...</p>
         </div>
       </section>
 
-      <!-- Contact Section -->
+      <!-- Contact -->
       <section id="contact" class="section">
         <h2>Contact</h2>
 
         <ul class="contact-list">
           <li>
             <strong>Email:</strong>
-            <a href="mailto:3alikassem123@gmail.com">3alikassem123@gmail.com</a>
+            <a href="mailto:3alikassem123@gmail.com">
+              3alikassem123@gmail.com
+            </a>
           </li>
+
           <li>
             <strong>GitHub:</strong>
             <a
@@ -106,6 +122,7 @@
           </li>
         </ul>
       </section>
+
     </main>
 
     <!-- Footer -->
