@@ -1,107 +1,115 @@
-
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Ali Kassem - Software Engineer"
+    />
+    <title>Ali Kassem | Software Engineer</title>
 
-    <!-- Google Fonts -->
+    <!-- Font Preloading -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Audiowide&family=Redaction+100:ital,wght@0,400;0,700;1,400&display=swap"
       rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap"
     />
 
-    <!-- CSS -->
+    <!-- Stylesheets & Scripts -->
     <link rel="stylesheet" href="style.css" />
-
-    <title>Ali Kassem | Software Engineer</title>
+    <script src="js/script.js" defer></script>
   </head>
-
+  
   <body>
-    <!-- Header & Navigation -->
-    <header>
-      <nav class="container">
-        <div class="logo">
-          <strong>Ali Kassem</strong>
-        </div>
+    <!-- Skip to Content Link for Accessibility -->
+    <a href="#main-content" class="skip-link">Skip to main content</a>
 
-        <ul>
+    <!-- Header & Navigation -->
+    <header class="header">
+      <nav class="nav container" aria-label="Main Navigation">
+        <a href="#" class="logo" aria-label="Ali Kassem Home">
+          <strong>Ali Kassem</strong>
+        </a>
+
+        <ul class="nav-links">
           <li><a href="#about">About</a></li>
           <li><a href="#projects">Projects</a></li>
+          <li><a href="#github">GitHub</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+        <button id="theme-toggle" aria-label="Toggle Dark Mode">🌙</button>
       </nav>
     </header>
 
-    <main class="container">
+    <main id="main-content" class="container">
       <!-- Hero Section -->
-      <section class="hero">
-        <h1>Software Engineer</h1>
+      <section class="hero" aria-labelledby="hero-title">
+        <h1 id="hero-title">Software Engineer</h1>
         <p class="subtitle">
-          Building robust web applications and cloud solutions.
+          Building robust backend systems, multi-tenant architectures, and cloud
+          solutions.
         </p>
       </section>
 
       <!-- About Section -->
-      <section id="about">
+      <section id="about" class="section">
         <h2>About Me</h2>
         <p>
-          I am a passionate software engineer with experience in web
-          development and cloud computing.
+          I am a software engineer focused on building performant backend
+          services, relational database design, and scalable web platforms.
         </p>
       </section>
 
       <!-- Projects Section -->
-      <section id="projects">
-        <h2>Projects</h2>
-        <p>Here are some of my projects:</p>
+      <section id="projects" class="section">
+        <h2>Featured Projects</h2>
+        <p class="section-intro">
+          Here are a few highlights of my recent work:
+        </p>
 
-        <ul class="projects-grid">
-          <li>
-            <h3>Project 1</h3>
-            <p>A web application for task management.</p>
-          </li>
+        <div class="projects-grid">
+          <!-- Dynamically populated via JS -->
+        </div>
+      </section>
 
-          <li>
-            <h3>Project 2</h3>
-            <p>A mobile app for personal finance tracking.</p>
-          </li>
-
-          <li>
-            <h3>Project 3</h3>
-            <p>An open-source library for data visualization.</p>
-          </li>
-        </ul>
+      <!-- GitHub Repositories Section -->
+      <section id="github" class="section">
+        <h2>GitHub Repositories</h2>
+        <p class="section-intro">
+          Live public repositories fetched directly from GitHub:
+        </p>
+        <div id="github-repos" class="projects-grid">
+          <p class="loading-text">Loading repositories...</p>
+        </div>
       </section>
 
       <!-- Contact Section -->
-      <section id="contact">
+      <section id="contact" class="section">
         <h2>Contact</h2>
 
-        <p>
-          Email:
-          <a href="mailto:3alikassem123@gmail.com">
-            3alikassem123@gmail.com
-          </a>
-        </p>
-
-        <p>
-          GitHub:
-          <a
-            href="https://github.com/alikassem877"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            github.com/alikassem877
-          </a>
-        </p>
+        <ul class="contact-list">
+          <li>
+            <strong>Email:</strong>
+            <a href="mailto:3alikassem123@gmail.com">3alikassem123@gmail.com</a>
+          </li>
+          <li>
+            <strong>GitHub:</strong>
+            <a
+              href="https://github.com/alikassem877"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              github.com/alikassem877
+            </a>
+          </li>
+        </ul>
       </section>
     </main>
 
     <!-- Footer -->
-    <footer class="container">
+    <footer class="footer container">
       <p>&copy; 2026 Ali Kassem. All rights reserved.</p>
     </footer>
   </body>
