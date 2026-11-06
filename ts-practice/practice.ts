@@ -57,3 +57,11 @@ function firstItem<T>(items: T[]): T | undefined {
 console.log(firstItem([1, 2, 3]));
 console.log(firstItem(["a", "b", "c"]));
 console.log(firstItem([]));
+
+console.log(isEven(4));
+console.log(isEven(7));
+
+console.log(countWords("hello world"));
+console.log(countWords("   "));
+
+console.log(projects.filter((project) => project.stars > 100000));
