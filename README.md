@@ -2,6 +2,8 @@
 
 A personal portfolio website showcasing my projects, skills, and background as a full-stack software engineer.
 
+🔗 **Live Site:** [https://alikassem877.github.io/my-first-repo/](https://alikassem877.github.io/my-first-repo/)
+
 ## Screenshot
 
 ![Portfolio](<Screenshot 2026-11-18 132042.png>)
@@ -9,9 +11,6 @@ A personal portfolio website showcasing my projects, skills, and background as a
 ## Getting Started
 
 Follow these instructions to run the project locally.
-
-### Prerequisites
-- Node.js installed on your machine.
 
 ### Installation & Running
 1. Clone the repository:
